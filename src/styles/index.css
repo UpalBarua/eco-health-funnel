@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    src:
+      url("/fonts/sourcesanspro-regular-webfont.woff2") format("woff2"),
+      url("/fonts/sourcesanspro-regular-webfont.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    src:
+      url("/fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"),
+      url("/fonts/sourcesanspro-semibold-webfont.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-weight: 800;
+    src:
+      url("/fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),
+      url("/fonts/sourcesanspro-bold-webfont.woff") format("woff");
+  }
+
+  body {
+    @apply text-neutral-dark font-source-sans-pro bg-white;
+  }
+}
+
+@layer utilities {
+  .grid-container {
+    --padding-inline: 1.5rem;
+    --container-max-width: 70rem;
+
+    display: grid;
+    grid-template-columns:
+      [full-width-start] minmax(var(--padding-inline), 1fr) [content-start] min(
+        100% - (var(--padding-inline) * 2),
+        var(--container-max-width)
+      )
+      [content-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+  }
+
+  .grid-container > :not(.full-width) {
+    grid-column: content;
+  }
+
+  .grid-container > .full-width {
+    grid-column: full-width;
+  }
+}
