@@ -1,7 +1,9 @@
+import { Header } from "./components/header";
+
 export function App() {
   return (
-    <div>
-      <p className="py-10 text-center text-2xl">Hello World!</p>
+    <div className="grid-container">
+      <Header />
     </div>
   );
 }
