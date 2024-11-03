@@ -1,5 +1,6 @@
-import { BsCart3 } from "react-icons/bs";
 import { IoMdStar } from "react-icons/io";
+import { AddToCartButton } from "./add-to-cart-button";
+import { CartBadge } from "./cart-badge";
 
 export function Banner() {
   return (
@@ -30,10 +31,8 @@ export function Banner() {
               🔥
             </span>
           </div>
-          <span className="hidden items-center gap-x-2 font-bold md:flex">
-            <BsCart3 strokeWidth="0.5" className="size-5" />
-            This is in 35 carts right now!
-          </span>
+          <CartBadge />
+          <AddToCartButton />
         </div>
         <div className="relative flex max-h-[inherit] items-center justify-center overflow-y-clip">
           <img
@@ -42,25 +41,6 @@ export function Banner() {
             alt="banner image"
           />
         </div>
-        <button className="absolute bottom-0 left-1/2 z-10 flex h-12 w-[14em] -translate-x-1/2 translate-y-1/2 items-center justify-center rounded-lg border border-dashed border-brand-maroon bg-brand-maroon px-4 text-xl font-bold text-white">
-          Add To Cart
-          <svg
-            fill="none"
-            height="48"
-            width="45"
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute right-[2.125em] z-10"
-          >
-            <path d="m0 0h22l23 48h-45z" fill="#b11e54"></path>
-            <path
-              d="m45 48-23-48-13.924 27.849c-2.594 5.187.323 11.437 5.965 12.78z"
-              fill="#ffd972"
-            ></path>
-          </svg>
-          <span className="absolute right-0 top-0 flex h-full w-[3.25em] items-center justify-center rounded-r-[inherit] bg-[#ffffe2] px-4 font-semibold text-neutral-dark">
-            FREE
-          </span>
-        </button>
       </div>
     </section>
   );

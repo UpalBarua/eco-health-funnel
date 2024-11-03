@@ -1,4 +1,5 @@
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import { OffersBadge } from "./offers-badge";
 
 const offersings = [
   "Supports Heart Muscle Function*",
@@ -11,31 +12,7 @@ const offersings = [
 export function Offerings() {
   return (
     <section className="pt-20 font-semibold">
-      <div className="flex flex-wrap items-center justify-center gap-7 pb-8">
-        <div className="grid justify-items-center gap-3 text-center text-sm">
-          <img src="/icons/icon-offerings-1.svg" alt="offerings icon" />
-          <span>
-            100% Secure
-            <br />
-            Checkout
-          </span>
-        </div>
-        <div className="grid justify-items-center gap-3 text-center text-sm font-semibold">
-          <img src="/icons/icon-offerings-2.svg" alt="offerings icon" />
-          <span>
-            Ships in 1<br />
-            Business Day
-          </span>
-        </div>
-        <div className="grid justify-items-center gap-3 text-center text-sm font-semibold">
-          <img src="/icons/icon-offerings-3.svg" alt="offerings icon" />
-          <span>
-            90-Day
-            <br />
-            Guarantee
-          </span>
-        </div>
-      </div>
+      <OffersBadge />
       <div>
         <p className="pb-6 text-lg leading-relaxed">
           Rich in natural beetroot and blended with nature's finest ingredients
