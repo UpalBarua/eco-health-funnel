@@ -37,7 +37,7 @@ export function Offerings() {
         </div>
       </div>
       <div>
-        <p className="max-w-[60ch] pb-6 text-lg leading-relaxed">
+        <p className="pb-6 text-lg leading-relaxed">
           Rich in natural beetroot and blended with nature's finest ingredients
           to support cardiovascular wellness, each scoop is a step toward a
           heart-healthy lifestyle.
