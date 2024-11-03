@@ -28,29 +28,34 @@
   }
 
   body {
-    @apply text-neutral-dark font-source-sans-pro bg-white;
+    @apply bg-white font-source-sans-pro text-neutral-dark;
   }
 }
 
 @layer utilities {
   .grid-container {
     --padding-inline: 1.5rem;
-    --container-max-width: 70rem;
+    --container-max-width: 60rem;
+    --breakout-max-width: 70rem;
+    --breakout-size: calc((var(--breakout-max-width) - var(--container-max-width)) / 2);
 
     display: grid;
     grid-template-columns:
-      [full-width-start] minmax(var(--padding-inline), 1fr) [content-start] min(
-        100% - (var(--padding-inline) * 2),
-        var(--container-max-width)
-      )
-      [content-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+      [full-width-start] minmax(var(--padding-inline),
+        1fr) [breakout-start] var(--breakout-size) [content-start] min(100% - (var(--padding-inline) * 2),
+        var(--container-max-width)) [content-end] var(--breakout-size) [breakout-end] minmax(var(--padding-inline),
+        1fr) [full-width-end];
   }
 
-  .grid-container > :not(.full-width) {
+  .grid-container> :not(.full-width, .breakout) {
     grid-column: content;
   }
 
-  .grid-container > .full-width {
+  .grid-container>.full-width {
     grid-column: full-width;
+  }
+
+  .grid-container>.breakout {
+    grid-column: breakout;
   }
 }

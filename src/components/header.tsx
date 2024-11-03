@@ -7,7 +7,7 @@ export function Header() {
   return (
     <header className="full-width">
       <div className="grid-container min-h-[1.875rem] bg-[#EFEFE9] text-center text-brand-green">
-        <div className="flex items-center justify-between">
+        <div className="breakout flex items-center justify-between">
           <button className="outline-none">
             <FaChevronLeft className="size-[0.875rem] opacity-75 hover:scale-105 hover:opacity-100" />
           </button>
@@ -23,7 +23,7 @@ export function Header() {
         </div>
       </div>
       <div className="grid-container bg-brand-green">
-        <div className="relative flex min-h-10 items-center justify-end py-3 text-white lg:min-h-20 lg:py-1">
+        <div className="breakout relative flex min-h-10 items-center justify-end py-3 text-white lg:min-h-20 lg:py-1">
           <a
             className="foucs:ring absolute right-1/2 translate-x-1/2 p-1 text-2xl"
             href="#"
