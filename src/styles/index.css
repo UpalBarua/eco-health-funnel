@@ -30,6 +30,10 @@
   body {
     @apply bg-white font-source-sans-pro text-neutral-dark;
   }
+
+  * {
+    /* border: 1px solid red; */
+  }
 }
 
 @layer utilities {

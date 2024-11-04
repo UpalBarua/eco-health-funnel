@@ -6,18 +6,20 @@ import { Offerings } from "./components/offerings";
 import { TheProblem } from "./components/the-problem";
 import { TheSolution } from "./components/the-solution";
 import { WhyBeetroot } from "./components/why-beetroot";
+import { HealthyIngredients } from "./components/healthy-ingredients";
 
 export function App() {
   return (
     <div className="grid-container">
-      <Header />
-      <Banner />
-      <Offerings />
-      <AsSeenIn />
-      <TheProblem />
-      <TheSolution />
-      <WhyBeetroot />
-      <HealthBenefits />
+      {/* <Header /> */}
+      {/* <Banner /> */}
+      {/* <Offerings /> */}
+      {/* <AsSeenIn /> */}
+      {/* <TheProblem /> */}
+      {/* <TheSolution /> */}
+      {/* <WhyBeetroot /> */}
+      {/* <HealthBenefits /> */}
+      <HealthyIngredients />
     </div>
   );
 }

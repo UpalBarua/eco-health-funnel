@@ -1,6 +1,7 @@
 import { IoMdStar } from "react-icons/io";
 import { AddToCartButton } from "./add-to-cart-button";
 import { CartBadge } from "./cart-badge";
+import { SalesBadge } from "./sales-badge";
 
 export function Banner() {
   return (
@@ -24,13 +25,7 @@ export function Banner() {
             Balanced Blood Pressure <span className="text-neutral-dark">&</span>{" "}
             Heart Healths
           </p>
-          <div className="relative hidden rounded-xl border border-dashed border-brand-maroon bg-white px-4 py-1 font-bold md:block">
-            Selling fast, HURRY!
-            <span className="text-brand-maroon"> 43 sold in last hour!</span>
-            <span className="absolute -right-[0.5em] -top-[0.75em] text-3xl">
-              🔥
-            </span>
-          </div>
+          <SalesBadge />
           <CartBadge />
           <AddToCartButton />
         </div>
