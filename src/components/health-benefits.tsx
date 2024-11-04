@@ -8,21 +8,36 @@ const benefits = [
     icon: "/icons/icon-benefits-1.svg",
     title: "Promotes Healthy Inflammatory Response",
     description:
-      "Contains antioxidants that help manage inflammation and support overall health. - Supports healthy inflammatory response. - Protects against oxidative stress. - Promotes cellular regeneration.",
+      "Contains antioxidants that help manage inflammation and support overall health.",
+    keypoints: [
+      "Supports healthy inflammatory response.",
+      "Protects against oxidative stress.",
+      "Promotes cellular regeneration.",
+    ],
   },
   {
     image: "/images/img-benefits-2.webp",
-    icon: "/icons/icon-benefits-1.svg",
-    title: "Promotes Healthy Inflammatory Response",
+    icon: "/icons/icon-benefits-2.svg",
+    title: "Aids Skin & Eye Health",
     description:
-      "Contains antioxidants that help manage inflammation and support overall health. - Supports healthy inflammatory response. - Protects against oxidative stress. - Promotes cellular regeneration.",
+      "Rich in beta-carotene and other nutrients that support healthy skin and eyes.",
+    keypoints: [
+      "Supports healthy skin and eyes.",
+      "Promotes cellular health.",
+      "Contains beta-carotene for eye health.",
+    ],
   },
   {
     image: "/images/img-benefits-3.webp",
-    icon: "/icons/icon-benefits-1.svg",
-    title: "Promotes Healthy Inflammatory Response",
+    icon: "/icons/icon-benefits-3.svg",
+    title: "Supports Healthy Cholesterol",
     description:
-      "Contains antioxidants that help manage inflammation and support overall health. - Supports healthy inflammatory response. - Protects against oxidative stress. - Promotes cellular regeneration.",
+      "Naturally occurring phytonutrients help maintain healthy cholesterol levels and liver function.",
+    keypoints: [
+      "Regulates neurons involved in attention and memory",
+      "Supports healthy blood flow to the brain",
+      "Reduces brain fog and improves overall cognitive function",
+    ],
   },
 ] as const;
 
@@ -41,8 +56,8 @@ export function HealthBenefits() {
         Our Nitric Oxide Beets are designed to support a wide range of health
         benefits, ensuring you feel your best every day.
       </p>
-      <ul className="grid grid-cols-1 gap-6 pt-10 lg:grid-cols-3">
-        {benefits.map(({ title, image, icon, description }) => (
+      <ul className="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-3">
+        {benefits.map(({ title, image, icon, description, keypoints }) => (
           <li
             key={title}
             className="relative rounded-lg bg-brand-green text-start text-white"
@@ -58,6 +73,11 @@ export function HealthBenefits() {
             <div className="space-y-4 px-4 py-16">
               <h4 className="text-xl font-bold sm:text-2xl">{title}</h4>
               <p className="text-lg leading-relaxed">{description}</p>
+              <ul className="text-lg leading-relaxed">
+                {keypoints.map((keypoint) => (
+                  <li key={keypoint}>{`- ${keypoint}`}</li>
+                ))}
+              </ul>
             </div>
           </li>
         ))}
