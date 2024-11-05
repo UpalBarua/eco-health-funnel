@@ -47,7 +47,7 @@ export function Faq() {
             value={`faq${index}`}
             className="overflow-hidden"
           >
-            <Accordion.Trigger className="group flex w-full flex-1 items-center justify-between px-2 py-5 leading-none outline-none">
+            <Accordion.Trigger className="group text-start flex w-full flex-1 items-center justify-between px-2 py-5 leading-none outline-none">
               <span>{question}</span>
               <IoChevronDown className="size-5 group-data-[state=open]:rotate-180" />
             </Accordion.Trigger>
