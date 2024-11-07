@@ -2,11 +2,12 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 import { OffersBadge } from "./offers-badge";
 
 const offersings = [
-  "Supports Heart Muscle Function*",
-  "Promotes Healthy Cholesterol*",
-  "Aids Skin and Eye Health*",
-  "Boosts Energy and Stamina*",
-  "Supports Healthy Inflammatory Response*",
+  "Regain Control Over Your Bladder",
+  "Minimize Urgent Bathroom Trips",
+  "Strengthen Pelvic and Bladder Function for Long-Term Support",
+  "Promote Healthy Urinary Tract Function",
+  "Enjoy Greater Comfort and Condence in Daily Life",
+  "Reduce Nighttime Disruptions for Better Sleep",
 ] as const;
 
 export function Offerings() {
@@ -15,9 +16,9 @@ export function Offerings() {
       <OffersBadge />
       <div>
         <p className="pb-6 text-lg leading-relaxed">
-          Rich in natural beetroot and blended with nature's finest ingredients
-          to support cardiovascular wellness, each scoop is a step toward a
-          heart-healthy lifestyle.
+          If bladder problems have you stressed, frustrated, and embarrassed
+          then it might be time to try this remedy you can try at home. It’s
+          natural, affordable and works day and night.
         </p>
         <ul className="space-y-2 md:text-xl">
           {offersings.map((offering, index) => (

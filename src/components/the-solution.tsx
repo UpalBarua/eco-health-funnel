@@ -1,21 +1,28 @@
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
-const problems = [
-  {
-    title: "Supports Heart Health and Circulation",
-    description:
-      "Our beetroot-based formula naturally boosts nitric oxide levels, promoting healthy blood flow and circulation to support your heart’s well-being.",
-  },
-  {
-    title: "Provides Natural Energy Without the Crash",
-    description:
-      "Rich in nitrates, Nitric Oxide Beets delivers sustained energy throughout the day, helping you stay active and alert without the dreaded energy crash.",
-  },
-  {
-    title: "Promotes Healthy Detoxification",
-    description:
-      "Packed with antioxidants and soluble fiber, our product supports liver and bowel detoxification, aiding in digestion and cellular regeneration for overall health.",
-  },
+// const problems = [
+//   {
+//     title: "Supports Heart Health and Circulation",
+//     description:
+//       "Our beetroot-based formula naturally boosts nitric oxide levels, promoting healthy blood flow and circulation to support your heart’s well-being.",
+//   },
+//   {
+//     title: "Provides Natural Energy Without the Crash",
+//     description:
+//       "Rich in nitrates, Nitric Oxide Beets delivers sustained energy throughout the day, helping you stay active and alert without the dreaded energy crash.",
+//   },
+//   {
+//     title: "Promotes Healthy Detoxification",
+//     description:
+//       "Packed with antioxidants and soluble fiber, our product supports liver and bowel detoxification, aiding in digestion and cellular regeneration for overall health.",
+//   },
+// ] as const;
+
+const solutions = [
+  "Feel totally empty after using the bathroom",
+  "No more burning or instant urge to urinate,",
+  "Well rested, energetic after sleeping through the night",
+  "Wear regular underwear with confidence",
 ] as const;
 
 export function TheSolution() {
@@ -40,17 +47,16 @@ export function TheSolution() {
           src="/images/img-solution-section.webp"
           alt="problem section image"
         />
-        <ul className="space-y-6 text-start">
-          {problems.map(({ title, description }) => (
-            <li key={title} className="flex items-start gap-x-2">
+        <ul className="space-y-4 text-start">
+          {solutions.map((solution) => (
+            <li key={solution} className="flex items-start gap-x-2">
               <div>
                 <IoIosCheckmarkCircle className="size-8 text-[#1f8e2a]" />
               </div>
               <div>
-                <h4 className="pb-1 text-xl font-bold sm:text-2xl">{title}</h4>
-                <p className="text-pretty leading-relaxed sm:text-lg">
-                  {description}
-                </p>
+                <h4 className="pb-1 text-xl font-bold sm:text-2xl">
+                  {solution}
+                </h4>
               </div>
             </li>
           ))}

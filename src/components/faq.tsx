@@ -6,26 +6,43 @@ import { OffersBadge } from "./offers-badge";
 
 const faqs = [
   {
-    question: "Can I use this as a pre-workout?",
+    question:
+      "Why is Advanced Urinary Formula superior to other bladder control supplements?",
     answer:
-      "Yes! Many of our customers love this product as a natural alternative because of the clean consistent energy it provides. Unlike the caffeine-loaded products, this one won’t give you palpitations, or the jitters.",
+      "Advanced Urinary Formula is doctor-formulated and includes clinically supported ingredients like Pumpkin Seed Extract, Punarnava, and Piperine to enhance absorption and efficacy. It’s made with premium, research-backed ingredients designed to target bladder health, reduce urinary urgency, and promote overall comfort. Please refer to the Why It Works section for detailed clinical results.",
   },
   {
-    question: "Can I take it along with any current medication I am taking?",
+    question: "When is the best time to take Advanced Urinary Formula?",
     answer:
-      "Unless you’re allergic to beets or any of the other ingredients you can take the product, however, it is recommended to always consult with your medical care provider.",
+      "For optimal results, we recommend taking 2 capsules at bedtime with a snack, or as directed by your healthcare provider. This helps support bladder function overnight and reduces the need for frequent bathroom trips.",
   },
   {
     question:
-      "My urine and stool look pinkish after taking this product, is that normal?",
+      "How long does it take to see results with Advanced Urinary Formula?",
     answer:
-      "Yes, this is very normal, the color change is due to the presence of betacyanin, a pigment that is natural to beets.",
+      "Many users begin to notice improvements within 2-4 weeks of consistent use. However, for best results, we recommend taking the formula for at least 12 weeks to fully experience the benefits of improved bladder control and reduced urgency.",
+  },
+  {
+    question: "Can I take more or less than the recommended dose?",
+    answer:
+      "It’s always best to follow the recommended dosage for the best results. However, if you feel adjustments are necessary, we advise consulting with your healthcare provider before making any changes to your dosage.",
+  },
+  {
+    question: "What if Advanced Urinary Formula doesn’t work for me?",
+    answer:
+      "We’re confident in the effectiveness of our formula, but if you’re not satisfied, we offer a 90-day, no-questions-asked return policy. Simply contact us for a full refund.",
   },
   {
     question:
-      "Can I combine Nitric Oxide Beets with Nitric Oxide Booster Capsules?",
+      "Can I take Advanced Urinary Formula if I’m already on bladder control medication?",
     answer:
-      "Yes! They have very different and complementary main ingredients and are designed to work very well together.",
+      "If you’re currently taking medications or have any medical conditions, we recommend speaking with your healthcare provider before adding any supplements to your routine to ensure there are no potential interactions.",
+  },
+  {
+    question:
+      "How does Piperine enhance the effectiveness of the other ingredients?",
+    answer:
+      "Piperine is a key ingredient that improves the bioavailability of the other components in the formula, helping your body absorb them more effectively. This means faster and more powerful results for bladder health and urinary function.",
   },
 ] as const;
 
@@ -47,7 +64,7 @@ export function Faq() {
             value={`faq${index}`}
             className="overflow-hidden"
           >
-            <Accordion.Trigger className="group text-start flex w-full flex-1 items-center justify-between px-2 py-5 leading-none outline-none">
+            <Accordion.Trigger className="group flex w-full flex-1 items-center justify-between px-2 py-5 text-start leading-none outline-none">
               <span>{question}</span>
               <IoChevronDown className="size-5 group-data-[state=open]:rotate-180" />
             </Accordion.Trigger>

@@ -1,22 +1,30 @@
 import { IoIosCloseCircle } from "react-icons/io";
 
+// const problems = [
+//   {
+//     title: "Chemicals Compromise Purity",
+//     description:
+//       "Competitors often use beets treated with chemicals, compromising their purity and effectiveness.",
+//   },
+//   {
+//     title: "Processed Sugars and Artificial Sweeteners",
+//     description:
+//       "Many supplements rely on added sugars to enhance flavor, and are laden with artificial sweeteners and high sugar content.",
+//   },
+//   {
+//     title: "Subpar Efficacy, Not Organic",
+//     description:
+//       "Competitors often fall short in delivering the same level of efficacy, leaving you with subpar results.",
+//   },
+// ] as const;
+
 const problems = [
-  {
-    title: "Chemicals Compromise Purity",
-    description:
-      "Competitors often use beets treated with chemicals, compromising their purity and effectiveness.",
-  },
-  {
-    title: "Processed Sugars and Artificial Sweeteners",
-    description:
-      "Many supplements rely on added sugars to enhance flavor, and are laden with artificial sweeteners and high sugar content.",
-  },
-  {
-    title: "Subpar Efficacy, Not Organic",
-    description:
-      "Competitors often fall short in delivering the same level of efficacy, leaving you with subpar results.",
-  },
-] as const;
+  "Running to the bathroom",
+  "Waking up at night to pee",
+  "Dribbling and leaking unexpectedly",
+  "Feeling like you’re never truly “empty” or “relieved”",
+  "Padded underwear and diapers",
+];
 
 export function TheProblem() {
   return (
@@ -35,17 +43,19 @@ export function TheProblem() {
           src="/images/img-problem-section.webp"
           alt="problem section image"
         />
-        <ul className="space-y-6 text-start">
-          {problems.map(({ title, description }) => (
-            <li key={title} className="flex items-start gap-x-2">
+        <ul className="space-y-4 text-start">
+          {problems.map((problem) => (
+            <li key={problem} className="flex items-start gap-x-2">
               <div>
                 <IoIosCloseCircle className="size-8 text-[#d14600]" />
               </div>
               <div>
-                <h4 className="pb-1 text-xl font-bold sm:text-2xl">{title}</h4>
-                <p className="text-pretty leading-relaxed sm:text-lg">
-                  {description}
-                </p>
+                <h4 className="pb-1 text-xl font-bold sm:text-2xl">
+                  {problem}
+                </h4>
+                {/* <p className="text-pretty leading-relaxed sm:text-lg"> */}
+                {/*   {description} */}
+                {/* </p> */}
               </div>
             </li>
           ))}
