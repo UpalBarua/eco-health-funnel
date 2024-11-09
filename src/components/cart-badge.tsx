@@ -1,9 +1,12 @@
 import { BsCart3 } from "react-icons/bs";
+import { twMerge } from "tailwind-merge";
 
-export function CartBadge() {
+type CartBadgeProps = React.HTMLAttributes<HTMLDivElement>;
+
+export function CartBadge({ className }: Readonly<CartBadgeProps>) {
   return (
-    <span className="hidden items-center gap-x-2 font-bold md:flex">
-      <BsCart3 strokeWidth="0.5" className="size-5" />
+    <span className={twMerge(className, "flex items-center gap-x-2 font-bold")}>
+      <BsCart3 strokeWidth="0.5" className="size-6" />
       This is in 35 carts right now!
     </span>
   );

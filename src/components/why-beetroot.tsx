@@ -27,15 +27,15 @@ export function WhyBeetroot() {
   return (
     <section className="relative mx-auto max-w-xl space-y-2 pt-32 text-center lg:max-w-full">
       <h3 className="pb-2 text-xl font-bold text-brand-maroon sm:text-2xl">
-        Why Beetroot?
+        Why Advance Urinary Formula?
       </h3>
       <p className="text-3xl font-bold sm:text-5xl">
         Harness the Power of <br />
-        Beetroot
+        Advance Urinary Formula
       </p>
       <p className="mx-auto max-w-[60ch] text-pretty leading-relaxed sm:text-lg">
-        There are many Beetroot supplements out there, many fall short and here
-        is why:
+        Becasue it's A Guaranteed Remedy that helps RE-BUILD your bladder
+        muscles from the Inside out.
       </p>
       <div className="grid gap-6 pt-2 sm:pt-4 lg:grid-cols-2 lg:items-center lg:gap-8 lg:pt-8">
         <div>
@@ -63,7 +63,7 @@ export function WhyBeetroot() {
       </div>
       <div className="grid justify-items-center gap-y-6">
         <p className="pt-16 text-xl font-semibold sm:text-4xl">
-          Try Nitric Oxide Organic Beets Risk-Free For 90 Days
+          Try Eco Health® Advance Urinary Formula Risk Free for 90 Days
         </p>
         <CartBadge />
         <AddToCartButton />

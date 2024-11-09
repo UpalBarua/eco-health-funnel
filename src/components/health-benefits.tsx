@@ -84,7 +84,7 @@ export function HealthBenefits() {
       </ul>
       <div className="grid justify-items-center gap-y-6">
         <p className="pt-16 text-xl font-semibold sm:text-4xl">
-          Try Nitric Oxide Organic Beets Risk-Free For 90 Days
+          Try Eco Health® Advance Urinary Formula Risk Free for 90 Days
         </p>
         <CartBadge />
         <AddToCartButton />

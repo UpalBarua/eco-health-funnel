@@ -1,23 +1,5 @@
 import { IoIosCloseCircle } from "react-icons/io";
 
-// const problems = [
-//   {
-//     title: "Chemicals Compromise Purity",
-//     description:
-//       "Competitors often use beets treated with chemicals, compromising their purity and effectiveness.",
-//   },
-//   {
-//     title: "Processed Sugars and Artificial Sweeteners",
-//     description:
-//       "Many supplements rely on added sugars to enhance flavor, and are laden with artificial sweeteners and high sugar content.",
-//   },
-//   {
-//     title: "Subpar Efficacy, Not Organic",
-//     description:
-//       "Competitors often fall short in delivering the same level of efficacy, leaving you with subpar results.",
-//   },
-// ] as const;
-
 const problems = [
   "Running to the bathroom",
   "Waking up at night to pee",
@@ -34,8 +16,8 @@ export function TheProblem() {
       </h3>
       <p className="text-3xl font-bold sm:text-5xl">Why Settle for Less?</p>
       <p className="text-pretty leading-relaxed sm:text-lg">
-        There are many beetroot supplements out there, many fall short and here
-        is why:
+        As we age, the intricate network of muscles surrounding the bladder
+        weakens often leading these problems.
       </p>
       <div className="grid gap-6 pt-2 sm:pt-4 lg:grid-cols-2 lg:items-center lg:gap-8 lg:pt-8">
         <img

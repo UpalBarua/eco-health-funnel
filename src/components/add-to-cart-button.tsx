@@ -1,6 +1,15 @@
-export function AddToCartButton() {
+import { twMerge } from "tailwind-merge";
+
+type AddToCartButtonProps = React.HTMLAttributes<HTMLButtonElement>;
+
+export function AddToCartButton({ className }: Readonly<AddToCartButtonProps>) {
   return (
-    <button className="relative z-10 flex h-12 w-[14em] items-center justify-center rounded-lg border border-dashed border-brand-maroon bg-brand-maroon px-4 text-xl font-bold text-white">
+    <button
+      className={twMerge(
+        className,
+        "relative z-10 flex h-12 w-[16em] items-center justify-center rounded-lg border border-dashed border-brand-maroon bg-brand-maroon px-4 text-xl font-bold text-white",
+      )}
+    >
       Add To Cart
       <img
         className="absolute right-[2.125em] z-10"
