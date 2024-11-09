@@ -10,15 +10,10 @@ const solutions = [
 export function TheSolution() {
   return (
     <section className="mx-auto max-w-xl space-y-2 pt-32 text-center lg:max-w-full">
-      <h3 className="pb-2 text-xl font-bold text-[#1f8e2a] sm:text-2xl">
+      <h3 className="text-2xl font-bold text-brand-lime sm:text-3xl">
         The Solution
       </h3>
-      <p className="text-3xl font-bold sm:text-5xl">
-        Confused About Heart
-        <br />
-        Health? We Make It Simple.
-      </p>
-      <p className="mx-auto max-w-[60ch] text-pretty leading-relaxed sm:text-lg">
+      <p className="mx-auto max-w-[60ch] text-pretty font-semibold leading-relaxed sm:text-lg">
         Bye, Buy Bladder Leaks, accidents, discomfort and worries with Eco
         Health's Advance Urinary Formula. Doctor Formulated with clincaly
         studied ingredients. Guaranteed to Work!

@@ -41,7 +41,7 @@ export function WhyBeetroot() {
         <div>
           <img
             className="rounded-xl"
-            src="/images/img-solution-section.webp"
+            src="/images/img-why-section.png"
             alt="problem section image"
           />
         </div>

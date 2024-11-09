@@ -10,12 +10,11 @@ const problems = [
 
 export function TheProblem() {
   return (
-    <section className="mx-auto max-w-xl space-y-2 text-center lg:max-w-full">
-      <h3 className="pb-2 text-xl font-bold text-brand-maroon sm:text-2xl">
+    <section className="mx-auto max-w-xl space-y-2 pt-10 text-center lg:max-w-full">
+      <h3 className="text-2xl font-bold text-brand-maroon sm:text-3xl">
         The Problem
       </h3>
-      <p className="text-3xl font-bold sm:text-5xl">Why Settle for Less?</p>
-      <p className="text-pretty leading-relaxed sm:text-lg">
+      <p className="mx-auto max-w-[60ch] text-pretty font-semibold leading-relaxed sm:text-lg">
         As we age, the intricate network of muscles surrounding the bladder
         weakens often leading these problems.
       </p>

@@ -21,11 +21,11 @@ export function App() {
       <WhyBeetroot />
       <HealthBenefits />
       <HealthyIngredients />
-      <Satisfaction />
+      {/* <Satisfaction /> */}
       <CustomerReviews />
       <Packages />
       <Faq />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
