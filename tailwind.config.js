@@ -19,6 +19,10 @@ export default {
         "brand-beige": "#E5D8C8",
         "brand-maroon": "#B11E54",
       },
+      backgroundImage: {
+        "banner-gradient":
+          "linear-gradient(150deg, rgba(254,248,232,1) 16%, rgba(229,216,200,1) 80%)",
+      },
     },
   },
   plugins: [],
