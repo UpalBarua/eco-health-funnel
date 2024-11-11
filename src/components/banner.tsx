@@ -1,22 +1,14 @@
 import { IoIosCheckmarkCircle, IoMdStar } from "react-icons/io";
+import { config } from "../config";
 import { AddToCartButton } from "./add-to-cart-button";
 import { CartBadge } from "./cart-badge";
 import { OffersBadge } from "./offers-badge";
 import { SalesBadge } from "./sales-badge";
 
-const offerings = [
-  "Regain Control Over Your Bladder",
-  "Minimize Urgent Bathroom Trips",
-  "Strengthen Pelvic & Bladder Function Long Term",
-  "Promote Healthy Urinary Tract Function",
-  "Enjoy Greater Comfort and Condence in Daily Life",
-  "Reduce Nighttime Disruptions for Better Sleep",
-] as const;
-
 export function Banner() {
   return (
-    <section className="full-width grid-container bg-banner-gradient">
-      <div className="relative grid items-center justify-center justify-items-center gap-y-4 py-14 pt-10 text-center md:grid-cols-2 md:gap-x-10 md:gap-y-6 md:text-start lg:justify-items-start">
+    <section className="full-width grid-container mb-20 bg-banner-gradient">
+      <div className="md:gird-cols-2 relative grid items-center justify-center justify-items-center gap-y-8 py-14 pt-10 text-center md:gap-x-10 md:gap-y-6 md:text-start lg:grid-cols-[75%_1fr] lg:justify-items-start">
         <div className="flex flex-wrap items-center justify-center gap-x-3 rounded-full bg-white px-4 py-2 text-sm font-bold md:py-1 md:text-base">
           <span className="flex items-center">
             {Array.from({ length: 5 }).map((_, index) => (
@@ -35,13 +27,13 @@ export function Banner() {
           <span className="text-neutral-dark"> and </span>
           RESTFUL NIGHTS!
         </p>
-        {/* <p className="col-span-full max-w-[60ch] text-pretty text-lg font-semibold leading-relaxed lg:col-span-1 lg:row-start-3"> */}
-        {/*   If bladder problems have you stressed, frustrated, and embarrassed */}
-        {/*   then it might be time to try this remedy you can try at home. It’s */}
-        {/*   natural, affordable and works day and night. */}
-        {/* </p> */}
+        <p className="col-span-full max-w-[60ch] text-pretty text-lg font-semibold leading-relaxed lg:col-span-1 lg:row-start-3">
+          If bladder problems have you stressed, frustrated, and embarrassed
+          then it might be time to try this remedy you can try at home. It’s
+          natural, affordable and works day and night.
+        </p>
         <ul className="col-span-full col-start-1 space-y-2 pb-5 text-start font-semibold md:text-xl lg:col-span-1 lg:row-start-4">
-          {offerings.map((offering, index) => (
+          {config.bannerOfferings.map((offering, index) => (
             <li className="flex items-start gap-x-2" key={`offering${index}`}>
               <div>
                 <IoIosCheckmarkCircle className="size-7 text-[#1f8e2a]" />
@@ -57,18 +49,17 @@ export function Banner() {
         <div className="right-0 top-1/2 row-start-3 max-w-[30rem] md:col-start-2 md:row-span-4 md:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(52vw,_45rem)] lg:max-w-none lg:-translate-y-1/2">
           <img
             className="object-cover object-center"
-            src="/images/img-banner.png"
+            src="/images/img-banner.webp"
             alt="banner image"
           />
         </div>
-        <picture>
+        <picture className="left-[40%] top-[45%] col-span-full max-w-[16rem] lg:absolute lg:max-w-20">
           <source
             media="(min-width:64rem)"
             srcSet="/icons/icon-manufacturer-vertical.webp"
           />
           <source srcSet="/icons/icon-manufacturer-horizontal.webp" />
           <img
-            className="left-[30rem] top-[26rem] col-span-full max-w-[16rem] md:row-start-1 lg:absolute lg:row-span-full lg:max-w-20"
             src="/icons/icon-manufacturer-horizontal.webp"
             alt="Manufacturer logos"
           />

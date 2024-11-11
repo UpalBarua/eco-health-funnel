@@ -1,15 +1,12 @@
 import { Banner } from "./components/banner";
-// import { CustomerReviews } from "./components/customer-reviews";
 import { Faq } from "./components/faq";
-// import { Footer } from "./components/footer";
+import { Footer } from "./components/footer";
 import { Header } from "./components/header";
-// import { HealthBenefits } from "./components/health-benefits";
-// import { HealthyIngredients } from "./components/healthy-ingredients";
 import { Packages } from "./components/packages";
-// import { Satisfaction } from "./components/satisfaction";
 import { TheProblem } from "./components/the-problem";
 import { TheSolution } from "./components/the-solution";
-import { WhyBeetroot } from "./components/why-beetroot";
+import { WhyItWorks } from "./components/why-it-works";
+import { WhyUrinaryFormula } from "./components/why-urinary-formula";
 
 export function App() {
   return (
@@ -18,14 +15,11 @@ export function App() {
       <Banner />
       <TheProblem />
       <TheSolution />
-      <WhyBeetroot />
-      {/* <HealthBenefits /> */}
-      {/* <HealthyIngredients /> */}
-      {/* <Satisfaction /> */}
+      <WhyUrinaryFormula />
+      <WhyItWorks />
       <Packages />
-      {/* <CustomerReviews /> */}
       <Faq />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

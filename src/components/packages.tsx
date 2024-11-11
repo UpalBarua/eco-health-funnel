@@ -1,27 +1,28 @@
+import { config } from "../config";
 import { SalesBadge } from "./sales-badge";
 
 export function Packages() {
   return (
-    <section>
+    <section className="| mb-20">
       <h2 className="pb-5 text-center text-3xl font-bold text-brand-green sm:text-5xl">
         Choose Your Package
       </h2>
       <div className="grid justify-center gap-4 pt-20 lg:grid-cols-3">
-        {Array.from({ length: 3 }).map((_, index) => (
+        {config.packages.map(({ name, title, image }, index) => (
           <div
             key={`package${index}`}
-            className="relative grid max-w-80 gap-2 rounded-xl border px-4 pb-8 pt-4 text-center shadow-sm"
+            className="relative grid gap-2 rounded-xl border px-4 pb-8 pt-4 text-center shadow-sm"
           >
             <div className="absolute top-0 flex h-12 w-full -translate-y-full items-center justify-center rounded-t-lg bg-brand-lime text-center font-semibold text-white">
-              Most Popular
+              {name}
             </div>
             <h3 className="text-balance text-4xl font-bold tracking-tight">
-              Buy 2, Get 1 FREE!
+              {title}
             </h3>
             <span className="block text-sm font-semibold italic text-brand-lime">
               Instant Savings $64.94
             </span>
-            <img src="/images/img-package-2.webp" alt="" />
+            <img className="mx-auto max-w-40 py-4" src={image} alt={name} />
             <span className="text-5xl font-bold">$28.30</span>
             <span className="font-bold">Per canister</span>
             <span className="pb-4 text-xl font-bold uppercase opacity-60">

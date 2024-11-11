@@ -1,43 +1,32 @@
 import { IoIosCloseCircle } from "react-icons/io";
-
-const problems = [
-  "Running to the bathroom",
-  "Waking up at night to pee",
-  "Dribbling and leaking unexpectedly",
-  "Feeling like you’re never truly “empty” or “relieved”",
-  "Padded underwear and diapers",
-];
+import { config } from "../config";
 
 export function TheProblem() {
   return (
-    <section className="mx-auto max-w-xl space-y-2 pt-10 text-center lg:max-w-full">
-      <h3 className="text-2xl font-bold text-brand-maroon sm:text-3xl">
+    <section className="| mx-auto mb-20 max-w-md lg:max-w-5xl">
+      <h2 className="text-balance pb-4 text-center text-4xl font-black text-brand-maroon md:text-5xl">
         The Problem
-      </h3>
-      <p className="mx-auto max-w-[60ch] text-pretty font-semibold leading-relaxed sm:text-lg">
+      </h2>
+      <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-8 text-center font-semibold leading-relaxed md:text-lg">
         As we age, the intricate network of muscles surrounding the bladder
         weakens often leading these problems.
       </p>
-      <div className="grid gap-6 pt-2 sm:pt-4 lg:grid-cols-2 lg:items-center lg:gap-8 lg:pt-8">
+      <div className="grid gap-6 md:gap-8 lg:grid-cols-2 lg:items-center">
         <img
-          className="rounded-xl"
+          className="rounded-lg"
           src="/images/img-problem-section.webp"
           alt="problem section image"
         />
-        <ul className="space-y-4 text-start">
-          {problems.map((problem) => (
-            <li key={problem} className="flex items-start gap-x-2">
-              <div>
+        <ul className="space-y-4 text-start md:space-y-6">
+          {config.problems.map((problem) => (
+            <li
+              key={problem}
+              className="flex items-start gap-x-2 text-pretty leading-relaxed"
+            >
+              <span>
                 <IoIosCloseCircle className="size-8 text-[#d14600]" />
-              </div>
-              <div>
-                <h4 className="pb-1 text-xl font-bold sm:text-2xl">
-                  {problem}
-                </h4>
-                {/* <p className="text-pretty leading-relaxed sm:text-lg"> */}
-                {/*   {description} */}
-                {/* </p> */}
-              </div>
+              </span>
+              <p className="text-xl md:text-2xl">{problem}</p>
             </li>
           ))}
         </ul>
