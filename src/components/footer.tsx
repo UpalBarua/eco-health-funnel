@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="full-width grid-container items-center bg-[#efefe9] py-10">
-      <div className="flex items-center justify-center gap-x-20 font-semibold text-[#17311b]">
+      <div className="flex flex-wrap items-center justify-center gap-10 font-semibold text-[#17311b] md:gap-20">
         <div className="flex items-center gap-x-4">
           <img className="size-12" src="/icons/icon-footer-1.svg" alt="" />
           <div className="grid">

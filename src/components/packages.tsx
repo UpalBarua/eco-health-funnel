@@ -3,11 +3,11 @@ import { SalesBadge } from "./sales-badge";
 
 export function Packages() {
   return (
-    <section className="| mb-20">
+    <section className="| mx-auto mb-20 max-w-5xl">
       <h2 className="pb-5 text-center text-3xl font-bold text-brand-green sm:text-5xl">
         Choose Your Package
       </h2>
-      <div className="grid justify-center gap-4 pt-20 lg:grid-cols-3">
+      <div className="grid justify-center gap-20 pt-20 lg:grid-cols-3 lg:gap-5">
         {config.packages.map(({ name, title, image }, index) => (
           <div
             key={`package${index}`}
