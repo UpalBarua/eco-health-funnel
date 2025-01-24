@@ -14,7 +14,7 @@ export function TheProblem() {
       <div className="grid gap-6 md:gap-8 lg:grid-cols-2 lg:items-center">
         <img
           className="rounded-lg"
-          src="/images/img-problem-section.webp"
+          src="/images/problem.png"
           alt="problem section image"
         />
         <ul className="space-y-4 text-start md:space-y-6">

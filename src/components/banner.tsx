@@ -46,10 +46,10 @@ export function Banner() {
         <CartBadge className="row-start-8 md:row-start-4 lg:row-start-6" />
         <AddToCartButton className="col-span-full row-start-4 md:row-start-5 lg:col-span-1 lg:col-start-1 lg:row-start-7" />
         <OffersBadge className="col-span-full row-start-5 md:row-start-6 lg:col-span-1 lg:col-start-1 lg:row-start-8" />
-        <div className="right-0 top-1/2 row-start-3 max-w-[30rem] md:col-start-2 md:row-span-4 md:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(52vw,_45rem)] lg:max-w-none lg:-translate-y-1/2">
+        <div className="right-0 top-1/2 row-start-3 max-w-[30rem] md:col-start-2 md:row-span-4 md:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(52vw,_80rem)] lg:max-w-none lg:-translate-y-1/2 lg:translate-x-[10rem]">
           <img
-            className="object-cover object-center"
-            src="/images/img-banner.webp"
+            className="w-full rounded-xl object-cover object-center"
+            src="/images/heroimage.png"
             alt="banner image"
           />
         </div>

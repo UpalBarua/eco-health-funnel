@@ -15,7 +15,7 @@ export function TheSolution() {
       <div className="grid gap-6 md:gap-8 lg:grid-cols-2 lg:items-center">
         <img
           className="rounded-lg"
-          src="/images/img-solution-section.webp"
+          src="/images/solution.png"
           alt="solution section image"
         />
         <ul className="space-y-4 text-start md:space-y-6">

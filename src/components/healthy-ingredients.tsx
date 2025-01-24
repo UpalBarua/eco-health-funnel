@@ -3,39 +3,75 @@ import { SalesBadge } from "./sales-badge";
 
 const ingredients = [
   {
-    name: "Organic Beetroot",
+    name: "Pumpkin Seed Extrac",
     image: "/images/img-ingredient-1.jpg",
     description:
       "Rich in dietary nitrates and antioxidants, our beetroot aids in blood circulation, supports healthy blood pressure, and provides cellular protection.",
     keywords: ["Blood Pressure", "Circulation", "Energy"],
     keypoints: [
-      "Promotes healthy blood circulation.",
-      "Supports balanced blood pressure.",
-      "Enhances digestive health and cellular protection.",
+      "Strengthens pelvic floor muscles for better bladder control.",
+      "Reduces urinary frequency and urgency by up to 50%.",
+      "Benefits observed after 12 weeks.",
     ],
   },
   {
-    name: "Oxystorm®",
+    name: "Horsetail Extract",
     image: "/images/img-ingredient-1.jpg",
     description:
       "OXYSTORM® is a standardized extract of red spinach. Supplementing daily can aid optimal tissue supply and support healthy blood flow and heart health.*",
     keywords: ["Blood Pressure", "Circulation", "Energy"],
     keypoints: [
-      "Provides a consistent nitrate supply.",
-      "Supports healthy blood flow.",
-      "Aids optimal tissue supply and heart health.",
+      "Enhances connective tissue integrity with silica.",
+      "Improves urinary flow and bladder function by 15%.",
+      "Effective after 6 weeks of use",
     ],
   },
   {
-    name: "Pomegranates",
+    name: "Punarnava Extract",
     image: "/images/img-ingredient-1.jpg",
     description:
       "Pomegranates shield against oxidative stress, helping to protect heart and brain health. Their rich antioxidant content bolsters your body’s defenses for enhanced health and longevity.*",
     keywords: ["Antioxidants", "Brain Health", "Heart Health"],
     keypoints: [
-      "Shields against oxidative stress.",
-      "Supports brain function and longevity.",
-      "Enhances cardiovascular health.",
+      "Supports kidney health and reduces fluid retention.",
+      "Promotes healthy urination patterns.",
+      "Relieves urinary frequency and discomfort",
+    ],
+  },
+  {
+    name: "Soy Germ Extract",
+    image: "/images/img-ingredient-1.jpg",
+    description:
+      "Pomegranates shield against oxidative stress, helping to protect heart and brain health. Their rich antioxidant content bolsters your body’s defenses for enhanced health and longevity.*",
+    keywords: ["Antioxidants", "Brain Health", "Heart Health"],
+    keypoints: [
+      "Isoflavones improve bladder strength and hormonal balance.",
+      "Reduces urinary issues in post-menopausal women.",
+      "Relieves bladder discomfort.",
+    ],
+  },
+  {
+    name: "Veld Grape Extract",
+    image: "/images/img-ingredient-1.jpg",
+    description:
+      "Pomegranates shield against oxidative stress, helping to protect heart and brain health. Their rich antioxidant content bolsters your body’s defenses for enhanced health and longevity.*",
+    keywords: ["Antioxidants", "Brain Health", "Heart Health"],
+    keypoints: [
+      "Strengthens connective tissues for bladder health.",
+      "Reduces inflammation and irritation.",
+      "Improves bladder function progressively",
+    ],
+  },
+  {
+    name: "Piperine",
+    image: "/images/img-ingredient-1.jpg",
+    description:
+      "Pomegranates shield against oxidative stress, helping to protect heart and brain health. Their rich antioxidant content bolsters your body’s defenses for enhanced health and longevity.*",
+    keywords: ["Antioxidants", "Brain Health", "Heart Health"],
+    keypoints: [
+      "Boosts urinary health by reducing fluid retention.",
+      "Anti-inflammatory benefits for healthy urination.",
+      "Relieves urinary frequency",
     ],
   },
 ] as const;

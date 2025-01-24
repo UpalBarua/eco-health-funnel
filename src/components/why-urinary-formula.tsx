@@ -7,7 +7,7 @@ export function WhyUrinaryFormula() {
   return (
     <section className="| relative mx-auto mb-20 grid max-w-2xl justify-items-center gap-y-8 lg:max-w-none">
       <div>
-        <h3 className="pb-4 text-center text-xl font-bold text-brand-maroon sm:text-2xl">
+        <h3 className="pb-4 text-center text-2xl font-bold text-brand-maroon sm:text-3xl">
           Why Advance Urinary Formula?
         </h3>
         <p className="text-balance pb-4 text-center text-4xl font-black md:text-5xl">
@@ -21,8 +21,8 @@ export function WhyUrinaryFormula() {
       </div>
       <div className="grid justify-items-center gap-8 lg:grid-cols-2 lg:items-center">
         <img
-          className="max-w-[14rem] rounded-xl lg:max-w-[20rem]"
-          src="/images/img-why-section.png"
+          className="max-w-[14rem] rounded-xl lg:max-w-[35rem]"
+          src="/images/multiple-bottle.png"
           alt="problem section image"
         />
         <ul className="space-y-10 text-start">
